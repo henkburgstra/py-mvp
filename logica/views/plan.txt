@@ -1,0 +1,20 @@
+Views zijn al legoblokjes aan elkaar te klikken. Presenters hebben signals en slots
+als bij Qt om dit mogelijk te maken.
+
+Voorbeeld:
+PatientPresenter heeft signal "patient_changed"
+
+AdressenPresenter heeft slots "patient", "relatie" en "medewerker"
+ZorgtrajectenPresenter heeft slots "patient", "zorgvraag", ...
+
+De views kunnen als volgt aan elkaar worden gekoppeld:
+
+patient_presenter.patient_changed.connect(adressen_presenter.patient)
+patient_presenter.patient_changed.connect(zorgtrajecten_presenter.patient)
+
+of met shortcut notatie:
+
+patient_presenter.patient_changed.connect(
+    adressen_presenter.patient,
+    zorgtrajecten_presenter.patient
+)
