@@ -18,7 +18,7 @@ Er is vaak behoefte aan meerdere views op data uit het probleemdomein. Een viewm
 zo'n view. Een viewmodel wordt gemaakt door een selectie te maken uit het domeinmodel en deze selectie eventueel
 te transformeren.
 
-![Datamodel to Viewmodel](../wiki/img/diagrams/datamodel_to_viewmodel.png "Datamodel to Viewmodel")
+![Datamodel to Viewmodel](datamodel_to_viewmodel.png "Datamodel to Viewmodel")
 
 Het viewmodel is de databuffer van de view. Alles wat in een view wordt ingevoerd wordt in een viewmodel
 opgeslagen. De invoerelementen in de view worden gevuld vanuit een viewmodel. De presenter zorgt voor de
@@ -44,4 +44,4 @@ en het viewmodel.
 
 ## Class diagram
 
-![Class diagram](../wiki/img/diagrams/py-mvp.png "Class diagram")
+![Class diagram](py-mvp.png "Class diagram")
